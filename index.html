@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+  <div class="w3-top" style="position: fixed;z-index: 4;" >
+    <div class="w3-bar w3-light-green"  >
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="login.jsp" class="w3-bar-item w3-button">Login</a>
+    <a href="signup.jsp" class="w3-bar-item w3-button">Sign up</a>
+    <a href="profile.jsp" class="w3-bar-item w3-button">Profile</a>
+    <a href="about.jsp" class="w3-bar-item w3-button">About Us</a>
+    <form action="Logout" >
+		<input type="Submit" value="Logout" class="w3-bar-item w3-button" >
+	</form>
+  </div>
+</div>
+
+
+  <img src="/air/aeroplanelogo1.jpg" style="margin-left: 38%;margin-top:1.7%" >
+    <head>
+    <style>
+      
+            .container{
+                right:0; 
+                 margin-left : -.4%;
+                margin-bottom:0%;
+                margin-top:.5%;
+                position : absolute;
+                width : 1520px ;
+                height: 430px;
+                background-color : blue ;
+                animation : animate 30s ease-in-out infinite ; 
+                transition: .2s;
+               /*  animation : animate 5s steps(4) infinite ;  */
+                 animation-delay: 0s ;
+                /* background-size : cover ;  */
+            } 
+
+            .outer{
+                position: absolute ;
+                left:0;
+                right:0;
+                width:100%;
+                height:100%;
+                z-index: 1;
+                 /* background : rgba(212, 25, 25, 0.5) ;  */
+            } 
+
+            @keyframes animate{
+                0%,100%{
+                    background-image : url(1565944712261-a.png)
+                }
+                25%{
+                    background-image : url(1564755521951-c.jpg)
+                }
+                50%{
+                    background-image : url(1571021679224-b.png)
+                }
+                75%{
+                    background-image : url(15698117698122-a.jpg)
+                }
+            }
+
+
+
+
+
+
+
+
+        .div1{
+            margin-top: -1.4% ;
+            font-size: 12px ;
+            width: 75% ;
+            color : #D00 ;
+            padding-bottom: -1% ;
+            border-spacing: -1% ;
+            border : 1px solid rgb(1, 255, 255) ;
+            margin-left : 15% ;
+            background-color : #EEF ;
+          }
+          .div2{
+            
+            margin-top: 0% ;
+            /* background-color:rgb(1, 255, 255) ; */
+            
+          }
+          .fi1{
+            /* position : float ; */
+            margin-right: 70%;
+            border-radius: 7px;
+            margin-left: 17%;
+            border-color: red;
+            margin-top:1.6%;
+            width: 390px;
+            height: 375px;
+            <!-- z-index: 3; -->
+            /* overflow: auto; */
+
+        }
+        .form1{
+            margin-top : 2% ;
+            margin-bottom : 2% ;
+            margin-left: 10% ;
+            
+        }
+        .radio{
+            color :aqua ;
+            
+        }
+        .font1{
+            size: 25% bold;
+            font-display: solid black ;
+            font : bold 15px/30px Georgia, serif ;
+        }
+        .inp1{
+            border-radius: 4px ;
+            padding : 8px ;
+            width : 200px ;
+            font-size : 12px bold ;
+        }
+        .pre1{
+            margin-top : 0% ;
+            font : bold 15px/30px Georgia, serif ;
+        }
+        .pre2{
+            margin-top : 8% ;
+            font : bold 15px/30px Georgia, serif ;
+        }
+        .input1{
+
+            margin-top: 1% ;
+            border-radius: 4px ;
+            padding : 2px ;
+            width : 200px ;
+            font-size : 12px ;
+        }
+        .input2{
+            border-radius: 4px ;
+            width : 220px ;
+            padding : 10px ;
+            position: relative;
+            font-size : 16px ;
+            margin-left: 33% ;
+          /* background-color:rgb(192, 224, 11);  */
+          background-color: rgb(7, 149, 206); 
+          /* border-radius: 4px;
+          width : 200px ;
+          padding: 2% 20% ;
+          margin-right: 10% ; */
+          /* margin-bottom : 20px; */
+        }
+        .pass{
+          margin-left : 0% ;
+          margin-top : -5% ;
+        }
+        .passenger{
+          margin-left : 25% ;
+          /* margin-top : -500% ; */
+          width : 23% ;
+        }
+        .seat{
+          margin-left: 34% ;
+        }
+
+        .seat1{
+          margin-left: 18% ;
+        }
+        
+        #passcls{
+        	margin-left : 0% ;
+        	margin-top : -2.5% ;
+        	radius : 8px;
+        	 background-color: #FFF ;
+        	font-size : 16px ;
+        	padding : 2% ;
+        }
+        
+        .search{
+        	margin-left : 30% ;
+        	margin-top : 5% ;
+        	radius : 8px;
+        	 background-color: #FFE ;
+        	font-size : 16px ;
+        	padding : 2% ;
+        	font-color : green ;
+        }
+        
+
+    </style>
+    </head>
+    <!-- <body class="body" bgcolor="#FFEECC" > -->
+    <body> 
+    
+    <div class="container"  >
+      <div class="outer" >
+      
+      
+     <form action="air" method="post" >  
+    <fieldset class="fi1" style="background-color: #ADD8EA" >
+    
+        <div class="div1" >&nbsp;&nbsp;Book domestic and internatinal flights</div>
+		<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <font class="font1">From   </font>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input list="browsers"  name="from" class="inp1" placeholder="Source" >
+            <datalist id="browsers">
+              <option value="Patna">
+              <option value="Delhi">
+              <option value="Mumbai">   
+            </datalist>
+          <br><br>
+
+    
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <font class="font1">To</font>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <input list="browser"  name="to" class="inp1" placeholder="Destination">
+            <datalist id="browser">
+              <option value="Patna">
+              <option value="Delhi">
+              <option value="Mumbai">             
+            </datalist>
+			<br><br>
+          
+
+          <pre class="pre1" >       Depart                 <input type="date" class="input1" name="dat" ></pre>
+          
+       <style>
+          .wrapper {
+            margin-top: -60px;
+            margin-left: 160px;
+            <!-- position: relative; -->
+            padding: 20px;
+            z-index: 1;
+            /* padding: relative; */
+          }
+          
+          .trigger {
+            margin-bottom: 10px;
+          }
+          
+          .content {
+            visibility: hidden;
+            background-color: #bfffff;
+            position: absolute;
+            margin-left: 0%;
+            padding: 25px;
+          }
+           .body {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+          }
+          .content:before {
+            position: absolute;
+            top: -10px;
+            content: "";
+            right: calc(10% 0px);
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent #a86464 transparent;
+          }
+          
+          .wrapper:hover .content {
+            visibility: visible;
+          }
+          #inf1{
+          		margin-bottom : 3.7% ;
+          }
+          
+          
+          
+        </style>   
+          
+          
+          
+          
+          
+          <pre class="pre2">       Passengers   </pre>
+          <br>
+          <!-- <div class="popit" id="sk" style="background-color:white;"> -->
+                  
+              <div class="wrapper">
+                  <div class="trigger">
+                       <input type="button" id="passcls" value="    Passenger | Class   " style="color: #F00;" >
+               </div> 
+                  <div class="content">
+                   
+                       <div class="pass">
+                           Adults &nbsp;&nbsp; <input type="number" value="1" class="passenger" name="adults"><br><br>
+                           Children   <input  type="number" value="0" class="passenger" name="children" ><br><br>
+                           Infants  &nbsp;  <input type="number" value="0" class="passenger" id="inf1" name="infants" ><br>
+                           
+					   Economy : <input type = "radio" name="passcls" value="ecocls" checked > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       Bussniss : <input type = "radio" name="passcls" value="bisscls"> 
+                       
+                       </div>  
+                       
+                  
+                  </div>
+               </div>
+
+          <input type="submit" class="search" value="  Search Flights  ">        
+                
+         </form>
+
+
+<!-- <style>
+    /* .container linkBox font-Roman clearfix{
+      
+    } */
+    .link_1{
+      margin-top : 75% ;
+      margin-left : 9%;
+    }
+    .link_2{
+      margin-top : -13% ;
+      margin-left : 25%;
+    }
+    .link_3{
+      margin-top : -10% ;
+      margin-left : 37%;
+    }
+    .link_5{
+      margin-top : -9.7% ;
+      margin-left : 52%;
+    }
+    .link_6{
+      margin-top : -14.7% ;
+      margin-left : 65%;
+    }
+    .link_7{
+      margin-top : -17.5% ;
+      margin-left : 83%;
+    }
+     -->
+
+</style>                      
+
+
+         <style>
+         /**
+ * Demo Styles
+ */
+<!--
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.demo {
+  margin: 0 auto;
+  padding-top: 64px;
+  max-width: 640px;
+  width: 94%;
+  
+}
+
+.demo h1 {
+  margin-top: 0;
+}
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom:0px;
+  left: 0;
+  height : 70px;
+  padding: 1rem;
+  background-color: #efefaa;
+  text-align: center;
+  font-size : 22px;
+}
+         
+         </style>
+       
+       
+       
+       
+       <div class="demo">
+  
+</div></div></div>
+
+<div class="footer">
+<demo><strong> © Copyright 2019  &nbsp;<font style="color:#ff6633;font-size:28px;">Air travel tourism</font> - &nbsp;All Rights Reserved </strong></demo></div>
+
+       
+</body>
+</html>
